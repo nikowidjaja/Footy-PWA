@@ -1,0 +1,80 @@
+.ronaldo-poster {
+  height: 50vh;
+}
+
+.league-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10vh;
+
+  .league-card:nth-child(4),
+  .league-card:nth-child(12) {
+    display: none;
+  }
+}
+
+@mixin cards {
+  margin: 2vw;
+  width: 25vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px gray;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 50%;
+  }
+}
+
+.league-card {
+  @include cards;
+  height: 13vh;
+  img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.league-card__logo {
+  @include cards;
+  height: 16vh;
+}
+
+.league-card:nth-child(8) {
+  img {
+    width: 40%;
+  }
+}
+
+.league-logo {
+  width: 30vw;
+  margin: 5vh auto;
+}
+
+.standing {
+  img,
+  object {
+    width: 5vh;
+  }
+  td {
+    width: 10vh;
+  }
+}
+
+// miscellaneous
+.bg-white {
+  background-color: white;
+}
+
+.padding-left {
+  padding-left: 2vh;
+}
+
+
+.bold {
+  font-weight: bold;
+}

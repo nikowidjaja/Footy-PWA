@@ -1,0 +1,17 @@
+<img class="match-messi" src="../images/messips.png" />
+<select class="league-select" onchange="leagueChange()" id="league-select"></select>
+
+<div class="date-filter">
+    <div class="date-filter__field">
+        <span>From</span>
+        <input type="date" id="date-from" value="2020-01-01" />
+    </div>
+    <div class="date-filter__field">
+        <span>To</span>
+        <input type="date" id="date-to" value="2020-01-01" />
+    </div>
+    <div onclick="getMatchesByIdFilter()" class="date-filter__go">Search</div>
+</div>
+<div class="margin-bottom" id="match-content">
+    <p>please select the league</p>
+</div>

@@ -1,0 +1,397 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+body {
+  background-color: #f3f2f8;
+  font-family: Montserrat;
+}
+
+.bottom-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100vw;
+  color: black;
+  height: 8vh;
+  z-index: 100 !important;
+  -webkit-box-shadow: 0 2px 5px gray;
+          box-shadow: 0 2px 5px gray;
+}
+
+.navbar-section {
+  width: calc(100% / 3);
+  text-align: center;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-section img {
+  width: 20%;
+  pointer-events: none;
+}
+
+.navbar-section p {
+  pointer-events: none;
+}
+
+.margin-bottom {
+  margin-bottom: 10vh;
+}
+
+.active-nav {
+  background-color: black;
+}
+
+.active-nav img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.active-nav p {
+  color: white;
+}
+
+.loader-background {
+  position: absolute;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 99999;
+}
+
+.loader {
+  position: relative;
+  left: 20vh;
+  top: 40vh;
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 15vh;
+  height: 15vh;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.hide-loader {
+  display: none;
+}
+
+.ronaldo-poster {
+  height: 50vh;
+}
+
+.league-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10vh;
+}
+
+.league-container .league-card:nth-child(4),
+.league-container .league-card:nth-child(12) {
+  display: none;
+}
+
+.league-card {
+  margin: 2vw;
+  width: 25vw;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 5px gray;
+          box-shadow: 0 2px 5px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 13vh;
+}
+
+.league-card img {
+  width: 50%;
+}
+
+.league-card img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.league-card__logo {
+  margin: 2vw;
+  width: 25vw;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 5px gray;
+          box-shadow: 0 2px 5px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 16vh;
+}
+
+.league-card__logo img {
+  width: 50%;
+}
+
+.league-card:nth-child(8) img {
+  width: 40%;
+}
+
+.league-logo {
+  width: 30vw;
+  margin: 5vh auto;
+}
+
+.standing img,
+.standing object {
+  width: 5vh;
+}
+
+.standing td {
+  width: 10vh;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.padding-left {
+  padding-left: 2vh;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.team-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3vh;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 5px gray;
+          box-shadow: 0 2px 5px gray;
+}
+
+.team-info__logo {
+  width: 20%;
+}
+
+.team-info__logo img {
+  width: 100%;
+}
+
+.team-info__detail {
+  width: 50%;
+  margin: 0 5vw;
+}
+
+.team-info__addto {
+  width: 20%;
+}
+
+.player-table {
+  background-color: white;
+}
+
+.player-table:nth-child(odd) {
+  background-color: #fcfcfc;
+}
+
+.selection {
+  margin: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.active-select {
+  border-bottom: 2px solid black;
+}
+
+.hide-content {
+  display: none;
+}
+
+.myteam img {
+  width: 50vw;
+}
+
+.myteam__delete, .myteam__detail {
+  background-color: red;
+  width: 50%;
+}
+
+.myteam__detail {
+  background-color: blue;
+}
+
+.neymar-img {
+  width: 120vw;
+  position: relative;
+  left: -10vw;
+}
+
+.match-box {
+  width: 85vw;
+  margin: 2vh auto;
+  padding: 2vh;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 3px gray;
+          box-shadow: 0 4px 3px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.match-box__competition {
+  font-weight: bold;
+  padding-bottom: 1vh;
+}
+
+.match-box__competition span:nth-child(2) {
+  color: gray;
+  float: right;
+  font-weight: normal;
+}
+
+.match-box__score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.match-box__score__time {
+  width: 15%;
+  text-align: center;
+}
+
+.match-box__score__team {
+  width: 70%;
+}
+
+.match-box__score__number {
+  width: 15%;
+}
+
+select {
+  display: block;
+}
+
+.match-messi {
+  width: 100%;
+}
+
+.date-filter__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.date-filter__field span {
+  margin: 0 10vw;
+  width: 20%;
+}
+
+.date-filter__field input[type="date"] {
+  margin-right: 10%;
+  width: 70%;
+}
+
+.date-filter__go {
+  margin: 2vh 0;
+  position: relative;
+  left: 50vw;
+  padding: 2vh 5vh;
+  background-color: black;
+  color: white;
+  border-radius: 15vh;
+  display: inline-block;
+}
+
+.league-select {
+  margin: 5vh 0;
+}
+
+.save-it {
+  position: fixed;
+  top: 0;
+}
+/*# sourceMappingURL=index.css.map */
