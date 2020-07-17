@@ -1,0 +1,16 @@
+{
+  "name": "football-app",
+  "version": "1.0.0",
+  "description": "PWA for football",
+  "main": "service-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Niko Pratama Wahjudi Widjaja",
+  "license": "ISC",
+  "dependencies": {
+    "idb": "^5.0.4",
+    "web-push": "^3.4.4"
+  }
+}
