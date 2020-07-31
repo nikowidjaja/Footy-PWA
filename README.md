@@ -2,7 +2,7 @@
 A plain JS football information app
 
 ### LIVE URL
-https://footy-app-pwa.web.app/
+footy-app.github.io
 
 ### CREATOR
 Niko Pratama Wahjudi Widjaja <br/>
